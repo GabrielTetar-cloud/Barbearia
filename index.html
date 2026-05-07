@@ -19,7 +19,7 @@
                
                 <li><a href="#" class="link"><i class="fa-solid fa-house-chimney"></i></a></li>
                  <li><a href="#" class="link"><i class="fa-solid fa-scissors"></i></a></li>
-                  <li><a href="#" class="link"><i class="fa-solid fa-book"></i></a></li>
+                  <li><a href="#" class="link"><i class="fa-solid fa-business-time"></i></a></li>
                    
                     <li><a href="#" class="link"><i class="fa-solid fa-location-dot"></i></a></li>
             </ul>
@@ -47,15 +47,25 @@
         <section id="conteudo">
              
             <article id="cortes">
+                <h2>Tabela de preços : </h2>
+                <ul>
+                    <li>Corte cabelo R$:</li>
+                    <li>Corte barba R$:</li>
+                    <li>Corte cabelo+barba</li>
+                    <li>Luzes R$:</li>
+                    <li>Platinado R$:</li>
+                </ul>
 
             </article>
             <!--Fim aritcle cortes-->
 
             <article id="agende">
-                <form action="agende.php">
-                    <p>
+              <div class="form">
+                <form action="agende.php" method="post"   >
+                    <div class="marcar">
+                        <i class="fa-solid fa-business-time"></i>
                         <label for="ihora">Selecione um horario : </label>
-                        <select name="hora" id="ihora">
+                        <select name="hora" id="ihora" required>
                             <optgroup label="Manhã">
                                 <option value="1">9:00</option>
                                 <option value="2">9:30</option>
@@ -89,12 +99,12 @@
                             </optgroup>
 
                         </select>
-
-                    </p>
-
-                    <p>
+                    </div>
+                   
+                    <div class="marcar">
+                        <i class="fa-solid fa-scissors"></i>
                         <label for="icorte">Selecione um corte</label>
-                        <select name="corte" id="icorte">
+                        <select name="corte" id="icorte" required>
                             <option value="1">Corte cabelo</option>
                             <option value="2">Corte barba</option>
                             <option value="3">Corte cabelo + barba</option>
@@ -103,23 +113,29 @@
 
                         </select>
 
+                    </div>
 
-                    </p>
 
+                    <div class="marcar">
+                        <i class="fa-solid fa-user"></i>
 
-                    <p>
-                         <label for="iprof">Selecione um profissional</label>
-                         <select name="prof" id="iprof">
+                        <label for="iprof">Selecione um barbeiro</label>
+                         <select name="prof" id="iprof" required>
                             <option value="1">Rodrigo</option>
                          </select>
-
-                    </p>
-
+                    </div>
 
 
-                    <input type="reset" value="Limpar">
-                    <input type="submit" value="Enviar">
+                    <div>
+                     
+                    <input type="submit" value="Marcar">   
+                    
+                   
+                    </div>
+
+
                 </form>
+              </div>
 
             </article>
 
