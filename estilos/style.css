@@ -183,9 +183,7 @@ form > div > input[type=submit]:hover{
   background-color: var(--destaque);
   cursor: pointer;
 }
-div.mapa{
-  width: 450px;
-}
+
 div.mapa > iframe {
   width: 250px;
 }
