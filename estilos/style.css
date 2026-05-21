@@ -187,7 +187,15 @@ form > div > input[type=submit]:hover{
   background-color: var(--destaque);
   cursor: pointer;
 }
-
+div.localcontainer > h2{
+  text-align: center;
+  font-size: 1.2em;
+  color: var(--destaque);
+}
+div.localcontainer > p {
+  text-align: center;
+  color: var(--texto);
+}
 div.mapa > iframe {
   width: 250px;
 }
