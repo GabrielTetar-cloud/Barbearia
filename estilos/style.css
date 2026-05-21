@@ -66,11 +66,13 @@ nav#menu a:hover{
 main {
   display: grid;
   grid-template-columns: auto 90vw auto;
+  background-color: var(--destaque);
   gap: 20px;
-  margin-top: 10px;
+  
   background-image: url();
 }
 section#contato{
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,10 +127,12 @@ article#cortes h2 {
   font-size: 1.2em;
   
 }
-article#cortes ul {
+article#cortes > div.cortescontainer{
   display: flex;
-  flex-direction: column;
-  list-style: none;
+}
+article#cortes ul{
+   list-style: none;
+   align-self: center;
 }
 article#agende  div.form{
   display: flex;
@@ -186,4 +190,20 @@ footer{
   height: 30px;
   background-color: var(--fundo-card);
   margin: auto;
+}
+
+
+
+@media screen and (min-width : 768px) {
+  div.mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+  }
+  iframe {
+    width: 90%;
+    height: 90%;
+  }
+  
 }
