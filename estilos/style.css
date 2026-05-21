@@ -183,6 +183,9 @@ form > div > input[type=submit]:hover{
   background-color: var(--destaque);
   cursor: pointer;
 }
+div.mapa{
+  width: 400px;
+}
 
 
 footer{
