@@ -199,18 +199,5 @@ footer{
   margin: auto;
 }
 
+*/
 
-
-@media screen and (min-width : 768px) {
-  div.mapa{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 600px;
-  }
-  iframe {
-    width: 90%;
-    height: 90%;
-  }
-  
-}
