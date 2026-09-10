@@ -8,6 +8,11 @@
   --destaque-inverso
   --fundo-card
 */
+/*
+Theme Name: Barbearia Sá
+Author: Gabriel Leite Tetar
+Version: 1.0
+*/
 :root{
     --fundo-principal:#85682C;
     --texto:#0B0A09;
@@ -124,6 +129,10 @@ article{
   margin-bottom: 10px;
   border-radius: 5px;
 }
+article#cortes{
+  height: 350px;
+  background: url(../imagens/WhatsApp\ Image\ 2026-08-06\ at\ 07.56.18\ \(1\).jpeg) no-repeat  center center;
+}
 article#cortes h2 {
   text-align: center;
   color: var(--destaque);
@@ -138,12 +147,16 @@ article#cortes ul{
    list-style: none;
    align-self: center;
 }
+article#agende{
+  height: 350px;
+  background: url(../imagens/WhatsApp\ Image\ 2026-08-06\ at\ 07.56.18\ \(3\).jpeg) no-repeat left center;
+}
 article#agende  div.form{
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: var(--fundo-card);
-  height: 170px;
+  height: 200px;
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
@@ -187,6 +200,15 @@ form > div > input[type=submit]:hover{
   background-color: var(--destaque);
   cursor: pointer;
 }
+article#local{
+  height: 400px;
+  background: url(../imagens/WhatsApp\ Image\ 2026-08-06\ at\ 07.56.18\ \(2\).jpeg) no-repeat  center center;
+}
+div.localconatiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 div.localcontainer > h2{
   text-align: center;
   font-size: 1.2em;
@@ -197,7 +219,9 @@ div.localcontainer > p {
   color: var(--texto);
 }
 div.mapa > iframe {
+  
   width: 250px;
+  border-radius: 2px;
 }
 
 footer{
@@ -205,6 +229,25 @@ footer{
   height: 30px;
   background-color: var(--fundo-card);
   margin: auto;
+  text-align: center;
 }
 
+@media screen and (min-width: 768px){
+  
+  article#cortes{
+    height: 500px;
+    width: 80vw;
 
+  }
+  article#agende{
+     height: 500px;
+    width: 80vw;
+
+  }
+  article#local{
+     height: 500px;
+    width: 80vwpx;
+
+  }
+
+}

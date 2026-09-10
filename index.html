@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
      <script src="https://kit.fontawesome.com/3e959f4359.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
        
@@ -67,88 +68,135 @@
             <!--Fim aritcle cortes-->
 
             <article id="agende">
-              <div class="form">
-                <form action="agende.php" method="post"   >
-                    <div class="marcar">
-                        <i class="fa-solid fa-business-time"></i>
-                        <label for="ihora">Horario : </label>
-                        <select name="hora" id="ihora" required>
-                            <optgroup label="Manhã">
-                                <option value="1">9:00</option>
-                                <option value="2">9:30</option>
-                                <option value="3">10:00</option>
-                                <option value="4">10:30</option>
-                                <option value="5">11:00</option>
-                                <option value="6">11:30</option>
+
+                    <div class="form">
+
+                        <form id="formAgendamento">
+
+                            <!-- DIA -->
+                            <div class="marcar">
+
+                                <i class="fa-solid fa-calendar"></i>
+
+                                <label for="idia">Dia</label>
+
+                                <select name="dia" id="idia" required>
+
+                                    <option value="1">Segunda</option>
+                                    <option value="2">Terça</option>
+                                    <option value="3">Quarta</option>
+                                    <option value="4">Quinta</option>
+                                    <option value="5">Sexta</option>
+                                    <option value="6">Sábado</option>
+
+                                </select>
+
+                            </div>
 
 
-                            </optgroup>
+                            <!-- HORÁRIO -->
+                            <div class="marcar">
 
-                            <optgroup label="Tarde">
-                                <option value="7">13:00</option>
-                                <option value="8">13:30</option>
-                                <option value="9">14:00</option>
-                                <option value="10">14:30</option>
-                                <option value="11">15:00</option>
-                                <option value="12">15:30</option>
-                                <option value="13">16:00</option>
-                                <option value="14">16:30</option>
-                                <option value="15">17:00</option>
-                                <option value="16">17:30</option>
-                                <option value="17">18:00</option>
+                                <i class="fa-solid fa-business-time"></i>
 
-                            </optgroup>
-                            <optgroup label="Noite">
-                                <option value="18">18:30</option>
-                                <option value="19">19:00
-                                </option>
+                                <label for="ihora">Horário:</label>
 
-                            </optgroup>
+                                <select name="hora" id="ihora" required>
 
-                        </select>
+                                    <optgroup label="Manhã">
+
+                                        <option value="1">09:00</option>
+                                        <option value="2">09:30</option>
+                                        <option value="3">10:00</option>
+                                        <option value="4">10:30</option>
+                                        <option value="5">11:00</option>
+                                        <option value="6">11:30</option>
+
+                                    </optgroup>
+
+                                    <optgroup label="Tarde">
+
+                                        <option value="7">13:00</option>
+                                        <option value="8">13:30</option>
+                                        <option value="9">14:00</option>
+                                        <option value="10">14:30</option>
+                                        <option value="11">15:00</option>
+                                        <option value="12">15:30</option>
+                                        <option value="13">16:00</option>
+                                        <option value="14">16:30</option>
+                                        <option value="15">17:00</option>
+                                        <option value="16">17:30</option>
+                                        <option value="17">18:00</option>
+
+                                    </optgroup>
+
+                                    <optgroup label="Noite">
+
+                                        <option value="18">18:30</option>
+                                        <option value="19">19:00</option>
+
+                                    </optgroup>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- CORTE -->
+                            <div class="marcar">
+
+                                <i class="fa-solid fa-scissors"></i>
+
+                                <label for="icorte">Corte</label>
+
+                                <select name="corte" id="icorte" required>
+
+                                    <option value="1">Corte cabelo</option>
+                                    <option value="2">Corte barba</option>
+                                    <option value="3">Corte cabelo + barba</option>
+                                    <option value="4">Luzes (com corte)</option>
+                                    <option value="5">Luzes (sem corte)</option>
+                                    <option value="6">Platinado</option>
+                                    <option value="7">Pigmentação</option>
+                                    <option value="8">Progressiva</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- BARBEIRO -->
+                            <div class="marcar">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <label for="iprof">Barbeiro</label>
+
+                                <select name="prof" id="iprof" required>
+
+                                    <option value="1">Rodrigo</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- BOTÃO -->
+                            <div>
+
+                                <input type="submit" value="Marcar">
+
+                            </div>
+
+                        </form>
+
                     </div>
-                   
-                    <div class="marcar">
-                        <i class="fa-solid fa-scissors"></i>
-                        <label for="icorte">Cortes</label>
-                        <select name="corte" id="icorte" required>
-                            <option value="1">Corte cabelo</option>
-                            <option value="2">Corte barba</option>
-                            <option value="3">Corte cabelo + barba</option>
-                            <option value="4">Luzes (com corte)</option>
-                            <option value="5">Luzes (sem corte)</option>
-                            <option value="6">Platinado</option>
-                            <option value="7">Pigmentação</option>
-                            <option value="8">Progressiva</option>
 
-                        </select>
-
-                    </div>
+                </article>
 
 
-                    <div class="marcar">
-                        <i class="fa-solid fa-user"></i>
-
-                        <label for="iprof">Babeiro</label>
-                         <select name="prof" id="iprof" required>
-                            <option value="1">Rodrigo</option>
-                         </select>
-                    </div>
-
-
-                    <div>
-                     
-                    <input type="submit" value="Marcar">   
-                    
-                   
-                    </div>
-
-
-                </form>
-              </div>
-
-            </article>
-
+            
+            
              <!--Fim aritcle agende-->
 
              <article id="local">
@@ -174,5 +222,61 @@
     <footer>
         Site desenvolvido por <a href="">Gabriel Leite Tetar</a>
     </footer>
+    ```html
+<script>
+
+document.getElementById("formAgendamento").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const formulario = this;
+    const dados = new FormData(formulario);
+
+    fetch("agende.php", {
+        method: "POST",
+        body: dados
+    })
+    .then(response => {
+
+        if (!response.ok) {
+            throw new Error("Erro HTTP: " + response.status);
+        }
+
+        return response.text();
+    })
+    .then(resultado => {
+
+        console.log("Resposta do PHP:", resultado);
+
+        resultado = resultado.trim();
+
+        if (resultado === "sucesso") {
+
+            alert("Agendado com sucesso!");
+            formulario.reset();
+
+        } else if (resultado === "ocupado") {
+
+            alert("Este horário já está ocupado!");
+
+        } else {
+
+            alert("Erro ao realizar o agendamento.");
+
+        }
+
+    })
+    .catch(error => {
+
+        console.error("Erro:", error);
+
+        alert("Erro ao conectar com o servidor.");
+
+    });
+
+});
+
+</script>
+
 </body>
 </html>
